@@ -1,0 +1,6 @@
+@media screen and (max-widht: 768px) {
+    header.navigasi-bar .list li a{
+        font-size: 10rem;
+    }
+    
+}
