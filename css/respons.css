@@ -1,6 +1,17 @@
 @media screen and (max-widht: 768px) {
-    header.navigasi-bar .list li a{
-        font-size: 10rem;
+    header.navigasi-bar{
+        flex-direction: column;
     }
     
+    header.navigasi-bar .list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .content-utama {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
 }

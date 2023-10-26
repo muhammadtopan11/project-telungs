@@ -1,113 +1,50 @@
 body{
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
     margin: 0;
+    display: flex;
+    flex-direction: column; 
 }
 
-header.navigasi-bar{
-    background-color: #E8EAE6;
-    padding: 10px 8px;
-    box-shadow: 0px 3px 2px gray;
-    padding: 10px;
-}
-
-header.navigasi-bar .navbar  {
+header.navbar-container {
     width: 100%;
     margin-inline: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-block: center;
-    
+    z-index: 999;
+    /* background-color: antiquewhite; */
+    box-shadow: -1px 2px 4px gray;
 }
 
-header.navigasi-bar .navbar .logo img{
-    height: 80px;
+header.navbar-container .logo img {
+    width: 150px;
 }
 
-header.navigasi-bar .list ul {
+header.navbar-container .nav-list ul{
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 2rem 1rem;
 }
 
-header.navigasi-bar .list li {
+header.navbar-container .nav-list li {
     list-style-type: none;
-    padding: 2px;
 }
 
-header.navigasi-bar .list li a {
+header.navbar-container .nav-list li a{
     text-decoration: none;
-    font-size: 15px;
-    color: #4F4889;
-    padding: 10px 20px;
+    font-size: 1.5rem;
+
+    color: black;
+    padding: .5rem 1.5rem;
     border-radius: 999px;
     transition: all .5s ease-in-out;
 }
 
-header.navigasi-bar .list li:hover a{
-    background-color: #4F4889;
+header.navbar-container .nav-list li:hover a{
+    background-color: #533E86;
     color: white;
-}
-
-main{
-    /* background: wheat; */
-    text-align: left;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    margin-inline: 150px;
-    padding-top: 40px;
-}
-
-main .content-utama{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    
-}
-
-main .content-utama .deskripsi{
-    flex: 1 1;
-    /* background-color: bisque; */
-}
-
-main .content-utama .deskripsi .judul {
-    font-size: 55px;
-}
-
-main .content-utama .deskripsi p {
-    font-size: 20px;
-}
-
-main .content-utama .deskripsi button {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    border: 3px solid transparent;
-    border-radius: 999px;
-    background-color: #4F4889;
-    padding: 15px 35px;
-    cursor: pointer;
-    transition: all .15s ease-in;
-}
-
-main .content-utama .deskripsi button:hover {
-    border: 3px solid #4F4889;
-    color: #4F4889;
-    background-color: transparent;
-}
-
-main .content-utama .img-deskripsi {
-    display: flex;
-    flex: .5;
-    /* background-color: aqua; */
-}
-
-main .content-utama .img-deskripsi img{
-    margin: auto;
-    min-width: 250px;
-    width: 500px;
-    /* background-color: antiquewhite; */
+    padding: 20px 40px;
 }
