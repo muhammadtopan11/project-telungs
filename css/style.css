@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +22,7 @@ header.navbar-container {
 }
 
 header.navbar-container .logo img {
-    width: 150px;
+    width: 80px;
 }
 
 header.navbar-container .nav-list ul{
@@ -35,8 +38,7 @@ header.navbar-container .nav-list li {
 
 header.navbar-container .nav-list li a{
     text-decoration: none;
-    font-size: 1.5rem;
-
+    font-size: 1rem;
     color: black;
     padding: .5rem 1.5rem;
     border-radius: 999px;
@@ -46,5 +48,67 @@ header.navbar-container .nav-list li a{
 header.navbar-container .nav-list li:hover a{
     background-color: #533E86;
     color: white;
-    padding: 20px 40px;
+    padding: 10px 30px;
+}
+
+main{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    align-items: center;
+}
+
+main .content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .content-description {
+    flex: 1 1;
+}
+
+main .content .content-description .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+main .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+main .content .content-description button{
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #533E86;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .content .content-description button:hover {
+    border: 3px solid #533E86;
+    color: #533E86;
+    background-color: transparent;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img {
+    margin: auto;
+    width: 650px;
 }
